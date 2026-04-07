@@ -22,7 +22,7 @@ class WhiteListView extends StatelessWidget {
           Expanded(child: const AppsListView())
         ],
       ),
-      floatingActionButton: FloatingActionButton(onPressed: () => _goToAddApplication(context), child: const Icon(Icons.add),),
+      floatingActionButton: FloatingActionButton(onPressed: () => _goToAddApplication(context), child: const Icon(Icons.edit),),
     );
   }
 }

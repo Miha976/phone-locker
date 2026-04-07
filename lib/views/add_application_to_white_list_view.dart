@@ -24,7 +24,7 @@ class _AddApplicationToWhiteListViewState
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "Ajouter des applications",
+          "Modifier la liste",
           style: TextStyle(fontSize: 14),
         ),
       ),
@@ -46,7 +46,8 @@ class _AddApplicationToWhiteListViewState
           )
         ],
       ),
-
+      floatingActionButton: FilledButton(onPressed: null, child: const Text("Enregistrer")),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }
@@ -58,6 +59,7 @@ class _ListApps extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+      padding: EdgeInsets.only(bottom: 80),
       itemCount: apps.length,
       itemBuilder: (context, index) {
       final app = apps[index];
